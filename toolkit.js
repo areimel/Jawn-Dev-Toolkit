@@ -16,6 +16,8 @@ Dev Toolkit Menu
 	
 	- Menu control code
 	- Menu creation code
+	- GA Events Viewer
+	- ADA Compliance
 
 ********************************************/
 

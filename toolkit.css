@@ -155,7 +155,7 @@ GA EVENTS VIEWER
 
 
 
-  /********************************************
+/********************************************
 
 ADA COMPLIANCE
 
@@ -169,94 +169,94 @@ Author: Alec Reimel
 
 ********************************************/
 
-html.--toolkit_ADA:not([lang]):after{
-  content: 'NO LANG ATTRIBUTE';
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255,0,0,.75);
-  color: #fff;
-  font-size: 100px;
-}
-
-html.--toolkit_ADA:after{
-  content: '';
-  background-image: url("/toolkit/mobile-thumb-zones.png");
-  background-size: cover;
-  background-position: center;
-  opacity: .75;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-  display: none;
-}
-@media only screen and (max-width : 750px) {
-  html.--toolkit_ADA:after{
-    display: block;
+  html.--toolkit_ADA:not([lang]):after{
+    content: 'NO LANG ATTRIBUTE';
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,0,0,.75);
+    color: #fff;
+    font-size: 100px;
   }
-}
 
-.--toolkit_ADA img:not([alt]) {
-  filter: blur(5px) !important;
-  border: solid 5px #fb0000 !important;
-}
-.--toolkit_ADA input:not([aria-label]) {
-  filter: blur(0px) !important;
-  border: solid 5px #fb0000 !important;
-}
-.--toolkit_ADA textarea:not([aria-label]) {
-  filter: blur(0px) !important;
-  border: solid 5px #fb0000 !important;
-}
-.--toolkit_ADA select:not([aria-label]) {
-  filter: blur(0px) !important;
-  border: solid 5px #fb0000 !important;
-}
-.--toolkit_ADA a:not([aria-label]) {
-  filter: blur(0px) !important;
-  border: solid 5px #fb0000 !important;
-}
+  html.--toolkit_ADA:after{
+    content: '';
+    background-image: url("/toolkit/mobile-thumb-zones.png");
+    background-size: cover;
+    background-position: center;
+    opacity: .75;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+  }
+  @media only screen and (max-width : 750px) {
+    html.--toolkit_ADA:after{
+      display: block;
+    }
+  }
+
+  .--toolkit_ADA img:not([alt]) {
+    filter: blur(5px) !important;
+    border: solid 5px #fb0000 !important;
+  }
+  .--toolkit_ADA input:not([aria-label]) {
+    filter: blur(0px) !important;
+    border: solid 5px #fb0000 !important;
+  }
+  .--toolkit_ADA textarea:not([aria-label]) {
+    filter: blur(0px) !important;
+    border: solid 5px #fb0000 !important;
+  }
+  .--toolkit_ADA select:not([aria-label]) {
+    filter: blur(0px) !important;
+    border: solid 5px #fb0000 !important;
+  }
+  .--toolkit_ADA a:not([aria-label]) {
+    filter: blur(0px) !important;
+    border: solid 5px #fb0000 !important;
+  }
 
 
-.ada_error_alert{
-  background-color: #fb0000;
-  color: #fff;
-  padding: 5px;
-  padding-right: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  position: fixed;
-  left: 0;
-}
+  .ada_error_alert{
+    background-color: #fb0000;
+    color: #fff;
+    padding: 5px;
+    padding-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    left: 0;
+  }
 
-.ada_error_alert .icon{
-  background-color: #fff;
-  color: #fb0000;
-  font-size: 16px;
-  height: 25px;
-  width: 25px;
-  position: relative;  
-}
-.ada_error_alert .icon>i{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%,-50%,0);
-}
-.ada_error_alert .copy{
-  font-size: 24px;
-  margin-left: 15px;
-}
+  .ada_error_alert .icon{
+    background-color: #fff;
+    color: #fb0000;
+    font-size: 16px;
+    height: 25px;
+    width: 25px;
+    position: relative;  
+  }
+  .ada_error_alert .icon>i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+  }
+  .ada_error_alert .copy{
+    font-size: 24px;
+    margin-left: 15px;
+  }
