@@ -18,6 +18,8 @@ Dev Toolkit Menu
 	- Menu creation code
 	- GA Events Viewer
 	- ADA Compliance
+	- Insecure Content Checker
+	- 
 
 ********************************************/
 
