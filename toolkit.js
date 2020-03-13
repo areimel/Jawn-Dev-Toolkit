@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 	var console_styling = "background:#fb0000; color:#fff; padding:5px 15px; font-size:18px;";
 
-	console.log('Jawn Dev Toolkit Initialized');
+	console.log('Jawn Dev Toolkit v'+toolkit_version+' Initialized');
 
 	var dev_menu_code = '\
 	<div id="dev_toolkit">\

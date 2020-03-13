@@ -186,7 +186,7 @@ Author: Alec Reimel
 
   html.--toolkit_ADA:after{
     content: '';
-    background-image: url("/toolkit/mobile-thumb-zones.png");
+    background-image: url("/toolkit/img/mobile-thumb-zones.png");
     background-size: cover;
     background-position: center;
     opacity: .75;
