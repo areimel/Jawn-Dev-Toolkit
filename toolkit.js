@@ -27,13 +27,47 @@ Dev Toolkit Menu
 
 $(document).ready(function(){
 
-	var toolkit_version = "0.1"
+	var toolkit_version = "0.5"
 
 	var console_styling = "background:#fb0000; color:#fff; padding:5px 15px; font-size:18px;";
 
 	console.log('Jawn Dev Toolkit v'+toolkit_version+' Initialized');
 
 	var dev_menu_code = '\
+	<div id="dev_toolkit">\
+		\
+		<div class="icon">\
+			<div class="accent"></div>\
+			<i class="fas fa-code"></i>\
+		</div>\
+		\
+		<div class="version">\
+			<p>Jawn Dev Toolkit v'+toolkit_version+'</p>\
+		</div>\
+		\
+		<div class="menu">\
+			\
+			<div class="menu_cell" data-toolkit-var="--toolkit_ADA">\
+				<i class="fab fa-accessible-icon"></i>\
+				<p>Dev ADA Checker</p>\
+			</div>\
+			\
+			<div class="menu_cell" data-toolkit-var="--toolkit_gaevents">\
+				<i class="far fa-file-code"></i>\
+				<p>GA Event Checker</p>\
+			</div>\
+			\
+			<div class="menu_cell" data-toolkit-var="--toolkit_insecure_content">\
+				<i class="fas fa-user-secret"></i>\
+				<p>Insecure Content</p>\
+			</div>\
+			\
+		</div>\
+		\
+	</div>\
+	';
+
+	var dev_menu_code_v2 = '\
 	<div id="dev_toolkit">\
 		\
 		<div class="icon">\
