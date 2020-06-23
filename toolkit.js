@@ -14,6 +14,7 @@ Contents:
 
 Dev Toolkit Menu	
 	
+	- Required Scripts
 	- Menu control code
 	- Menu creation code
 	- GA Events Viewer
@@ -24,7 +25,31 @@ Dev Toolkit Menu
 ********************************************/
 
 
+/********************************************
 
+REQUIRED SCRIPTS
+
+********************************************/
+
+$(document).ready(function(){
+	//FONTAWESOME
+		//$.ajax({
+		//  url: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/regular.min.js',
+		//  dataType: "script",
+		//  success: "success"
+		//});
+});
+	
+
+	
+
+
+
+/********************************************
+
+TOOLKIT INITIALIZATION
+
+********************************************/
 $(document).ready(function(){
 
 	var toolkit_version = "0.5"
@@ -68,8 +93,7 @@ $(document).ready(function(){
 	';
 
 	var dev_menu_code_v2 = '\
-	<div id="dev_toolkit">\
-		\
+	<div class="--jawn_toolkit_icon">\
 		<div class="icon">\
 			<div class="accent"></div>\
 			<i class="fas fa-code"></i>\
@@ -78,30 +102,14 @@ $(document).ready(function(){
 		<div class="version">\
 			<p>Jawn Dev Toolkit v'+toolkit_version+'</p>\
 		</div>\
-		\
-		<div class="menu">\
-			\
-			<div class="menu_cell" data-toolkit-var="--toolkit_ADA">\
-				<i class="fab fa-accessible-icon"></i>\
-				<p>Dev ADA Checker</p>\
-			</div>\
-			\
-			<div class="menu_cell" data-toolkit-var="--toolkit_gaevents">\
-				<i class="far fa-file-code"></i>\
-				<p>GA Event Checker</p>\
-			</div>\
-			\
-			<div class="menu_cell" data-toolkit-var="--toolkit_insecure_content">\
-				<i class="fas fa-user-secret"></i>\
-				<p>Insecure Content</p>\
-			</div>\
-			\
-		</div>\
+	</div>\
+	\
+	<div class="--jawn_toolkit_menu">\
 		\
 	</div>\
 	';
 
-	$("body").append(dev_menu_code);
+	$("body").append(dev_menu_code_v2);
 	console.log('Jawn Dev Toolkit Active');
 });
 
